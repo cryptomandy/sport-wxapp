@@ -1,0 +1,34 @@
+<!--心肺统计 -->
+<view class="index_box container">
+    <scroll-view>
+        <view class="status_bg status1">
+            <!--顶部分数显示  -->
+            <view class="top_bg">
+                <view class='top_t'>
+                    <text style='font-size:{{hShow.fontH}}rpx;'>{{hShow.heartVal}}</text><view>BPM</view>
+                </view>
+            </view>
+            <!--检测历史数据-->
+            <view class="his_bg">
+                <view class="his_tit">
+                    <text>{{timeShow}}</text>
+                </view>
+                <view class="his_list" wx:for="{{hisList}}" wx:key="Id">
+                    <view class="list_l">{{item.showTime}}</view>
+                    
+                    <view class='list_m' wx:if='{{item.AHRunStatus==0}}'>正常</view>
+                    <view class='list_m'  wx:else class='tip_r'>燃脂</view>
+
+                    <view class="list_r">
+                       <text>{{item.AHResting}}</text><text>次</text>/分钟
+                    </view> 
+                </view>
+            </view>
+
+            <view class='no_more'>
+                <text></text><view>{{textRes}}</view><text></text>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

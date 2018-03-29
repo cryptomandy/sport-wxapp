@@ -1,0 +1,82 @@
+.index_box{
+    font-size: 30rpx;
+}
+.userinfo {
+    padding-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.initInfro{
+    padding-top: 40rpx;
+}
+.noshow{
+    display: none;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+/*输入体重身高*/
+.con_box{
+    margin-top: 20%;
+    padding : 0 56rpx;
+}
+.input_bg{
+    display: flex;
+    justify-content: space-between;
+}
+.input_item{
+    position: relative;
+    border-bottom: solid 1px #1bb1fe;
+    line-height: 70rpx;
+    margin-bottom: 70rpx;
+    color: #1bb1fe;
+    width: 100%;
+}
+.con_box input{
+    display: inline-block;
+    overflow: inherit;
+    font-size: 28rpx;
+    width: 56%;
+    color: #333;
+}
+
+.con_box text{
+    color: #333;
+    font-size: 36rpx;
+    margin-right: 34rpx;
+}
+.input_bg .code_item{
+    width: 67%;
+}
+.input_bg .code_btu{
+    float: right;
+    display: inline-block;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 18rpx;
+    border: solid 1px #1bb1fe;
+    color: #1bb1fe;
+    text-align: center;
+    font-size: 24rpx;
+    border-radius: 14rpx;
+    margin-right: 0;
+}
+.login_btu{
+    position: fixed;
+    bottom: 30%;
+    width: 320rpx;
+    left: 50%;
+    margin-left: -160rpx;
+    height: 74rpx;
+    line-height: 74rpx;
+    text-align: center;
+    background: #1bb1fe;
+    color: #fff;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+}

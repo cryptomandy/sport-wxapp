@@ -1,0 +1,54 @@
+<!--步数统计 -->
+<view class="index_box container">
+    <scroll-view>
+        <view class='w_box'>
+            <view class='p_po'>
+                <view class="wrap_c">
+                    <view class='circle {{isStyle.cirClass}}'>
+                        <view class='percent_s left' style='-webkit-transform:{{isStyle.isLDeg}}'></view>
+                        <view class='percent_s right {{isStyle.rightClass}}'></view>
+                    </view>
+                    <view class='num'></view>
+                </view>
+                <view class='t_box'>
+                    <view class='t_text'>
+                        <!--已连设备  -->
+                        <view class="wrap_text">
+                            <image class="icon_show" src='../../image/index/can_s_icon.png'></image>
+                            <view class="num_show"><text>{{stepData.ASSteps}}</text><view class='n_font'>步</view></view>
+                            <view class="des_show">目标完成{{percent}}%</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="detail_data">
+            <view class="d_list d_list01">
+                <view></view>
+                <text>运动距离</text>
+                <text>{{stepData.ASMileage}}公里</text>
+            </view>
+            <view class="d_list d_list02">
+                <view></view>
+                <text>消耗热量</text>
+                <text>{{stepData.ASMileage}}千卡</text>
+            </view>
+            <view class="d_list d_list03">
+                <view></view>
+                <text>有效时长</text>
+                <text>{{stepData.ASTimeTotal}}分钟</text>
+            </view>
+        </view>
+        <navigator url="../stepchart/t">
+        <view class="bottom_box">
+            <view class="list_b">
+                <view class="bo_item active">
+                    <view></view><view>统计</view>
+                </view>
+            </view>
+        </view>
+        </navigator>
+    </scroll-view>
+
+</view>

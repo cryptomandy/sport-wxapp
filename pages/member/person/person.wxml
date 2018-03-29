@@ -1,0 +1,41 @@
+
+<view class="index_box">
+    <view class='top_bg'>
+        <view class="userinfo">
+            <view class='img_box'>
+                <image class="userinfo-avatar" src="{{user.userInfo.avatarUrl}}" background-size="cover"></image>
+            </view>
+            <view class='name_in'>{{user.userInfo.nickName}}</view>
+        </view>
+    </view>
+    <view class='tips_detail' hidden='{{isShow ? false : true}}'>请填写个人信息，以便准确的分析数据。</view>
+    <view class='item_bg'>
+        <picker value="{{sexIndex}}"  range="{{sexArr}}" bindchange="bindSexChange">
+            <view class="his_list">
+                <view class="list_l">性别</view>
+                <view class="list_r">{{sexArr[sexIndex]}}</view> 
+            </view>
+        </picker>
+        
+        <picker mode="date" value="{{birthDay}}" start="1930-01-01" end="{{endLimit}}" bindchange="bindDateChange">
+            <view class="his_list" >
+                <view class="list_l">出生年月</view>
+                <view class="list_r">{{birthDay}}</view> 
+            </view>
+        </picker>
+        
+        <picker   value="{{hIndex}}" range="{{hightArr}}" bindchange="bindHightChange">
+            <view class="his_list">
+                <view class="list_l">身高</view>
+                <view class="list_r" >{{hightArr[hIndex]}}厘米</view> 
+            </view>
+        </picker>
+
+        <picker value="{{wIndex}}" range="{{wightArr}}" bindchange="bindWightChange">
+            <view class="his_list">
+                <view class="list_l">体重</view>
+                <view class="list_r" >{{wightArr[wIndex]}}千克</view> 
+            </view>
+        </picker>
+    </view>
+</view>

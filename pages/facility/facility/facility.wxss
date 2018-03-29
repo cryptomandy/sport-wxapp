@@ -1,0 +1,64 @@
+.index_box > view{
+    background: #fff;
+}
+.an_res{
+    background: #fff;
+}
+.an_titBg{
+    padding: 34rpx 30rpx;
+    position: relative;
+}
+.an_titBg .an_tit{
+    display: block;
+    position: relative;
+    font-size: 32rpx;
+}
+.an_titBg .an_tit view{
+    width: 6rpx;
+    height: 30rpx;
+    background: #1bb1fe;
+    display: inline-block;
+    margin-right: 12rpx;
+    vertical-align: middle;
+    margin-top: -4rpx;
+}
+.an_item{
+    display: flex;
+    padding: 30rpx;
+    justify-content: space-between;
+    position: relative;
+}
+.an_item text{
+    color: #999;
+    font-size: 24rpx;
+}
+.an_item:after,.an_titBg:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+
+
+.btn_bg{
+    font-size: 28rpx;
+    padding-bottom: 30rpx;
+}
+.btn_bg text{
+    margin: 30rpx auto;
+    text-align: center;
+    display: block;
+    width: 320rpx;
+    height: 74rpx;
+    line-height: 74rpx;
+    color: #1bb1fe;
+    border:solid 1px #1bb1fe;
+    border-radius: 10rpx;
+    
+}

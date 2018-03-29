@@ -1,0 +1,29 @@
+<!--运动教程视频 -->
+<view class="index_box">
+    <view class='top_bg'>
+        <image wx:if='{{parent.AVCoverUrl!=""}}' src='{{parent.AVCoverUrl}}'></image>
+        <view>暂无图片介绍</view>
+    </view>
+
+    <view class='s_detail'>
+        <view class='s_tit'><text></text>运动说明</view>
+        <view class='s_infro'>{{parent.AVNote !="" ? parent.AVNote :"暂无运动说明"}}</view>
+    </view>
+
+    <view class='vedio_bg'>
+        <block wx:for="{{vedioList}}" wx:key="DataId">
+            <view class='v_items'>
+                <view class='v_left'>
+                    <video src="{{item.AVVideoUrl}}" objectFit="fill" poster="{{item.AVCoverUrl}}"></video>
+                </view>
+                <view class='v_right'>
+                    <view class='tit_v'>第{{item.DataId + 1}}节 {{item.AVTitle}}</view>
+                    <view class='infro_v'>{{item.AVTime}}分钟</view>
+                </view>
+            </view>
+        </block>
+        <view class='no_more'>
+            <text></text><view>{{textMsg}}</view><text></text>
+        </view>
+    </view>
+</view>

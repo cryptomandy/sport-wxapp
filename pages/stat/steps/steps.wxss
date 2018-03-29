@@ -1,0 +1,264 @@
+/*CSS进度环  */
+.p_po{
+    width: 200px;
+    margin:  0 auto;
+    height: 200px;
+    position: relative;
+}
+.t_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.w_box{
+    height: 240px;
+    background-color: #1cb1ff;  
+    padding-top: 20rpx;
+}
+.wrap_c,.circle,.percent_s{
+    position: absolute;
+    width: 200px;  
+    height: 200px;  
+    border-radius: 50%; 
+}
+.wrap_c{  
+    background-color: #009ef0;  
+}  
+.circle{  
+    box-sizing: border-box;  
+    border:8px solid #009ef0;  
+    clip:rect(0,200px,200px,100px);  
+}  
+.clip-auto{  
+    clip:rect(auto, auto, auto, auto);  
+}  
+.percent_s{  
+    box-sizing: border-box;  
+    top:-8px;  
+    left:-8px;  
+}  
+.left{  
+    transition:transform ease;  
+    border:16px solid #fff;  
+    clip: rect(0,100px,200px,0);  
+}  
+.right{  
+    border:16px solid #fff;  
+    clip: rect(0,200px,200px,100px);  
+}  
+.wth0{  
+    width:0;  
+}  
+.num{  
+    position: absolute;  
+    box-sizing: border-box;  
+    width: 183px;  
+    height: 183px;  
+    line-height: 183px;  
+    text-align: center;  
+    border:  solid 1px #f1f8ff;
+    font-size: 40px;  
+    left: 8px;  
+    top: 8px;  
+    border-radius: 50%;  
+    background-color: #1cb1ff;   
+}  
+
+/*canvas保留样式  */
+.wrap_can{
+    position: relative;
+    padding:  20rpx 0 70rpx 0;
+    /* background-image:-webkit-linear-gradient(to top,  #0ce2da ,#1cb1ff);
+    background-image:linear-gradient(to top, #0ce2da ,#1cb1ff); */
+    background: #1cb1ff;  
+    /* background: url(https://m.ly.com/healthy/health/assets/images/small/index_bg.jpg) no-repeat;
+    background-size:  cover; */
+}
+.wrap_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 30px;
+    position: relative;
+}
+.wrap_text .total_s, .wrap_text .num_show,.wrap_text .icon_show{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.icon_show{
+    margin: 0 auto;
+    display: block;
+    height: 32px;
+    width: 26px;
+}
+.total_s{
+    align-items: center;
+    font-size: 13px;
+    padding-top: 15px;
+    align-self: baseline;
+}
+.total_s cover-view{
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    
+}
+.total_s .t_item{
+    margin-left: 8px;
+}
+.line_bg{
+    width: 1px;
+    color: #fff;
+    font-size: 10px;
+    vertical-align: center;
+    line-height: 10px;
+    height: 10px;
+    background: #fff; 
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.bind_t1{
+    font-size: 30px;
+    margin: 10px 0 8px;
+}
+.bind_t2{
+    font-size: 15px;
+    
+}
+.bind_t1 text{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 14px;
+}
+.bind_t1 text:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.num_show{
+    margin:  0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    align-items: baseline;
+}
+.num_show text{
+    font-size: 42px;
+}
+.num_show .n_font{
+    font-size: 14px;
+    display: inline;
+}
+
+
+.des_show{
+    font-size: 12px;
+    margin: 15px auto 0;
+    text-align: center;
+    display:block;
+    width: 90px;
+    height: 20px;
+    border: solid 1px #fff;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+
+.detail_data{
+    background: #fff;
+}
+.detail_data .d_list{
+    font-size: 28rpx;
+    padding: 30rpx;
+    position: relative;
+    color: #333;
+}
+.detail_data .d_list text:last-child{
+    color: #999;
+    float: right;
+}
+.detail_data .d_list:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+.d_list01 view,.d_list02 view,.d_list03 view,.bo_item view:first-child{
+    margin-right: 10rpx;
+    vertical-align: middle;
+    background: url(https://m.ly.com/healthy/health/assets/images/app/small1/stat_i.png?t=20171109) no-repeat;
+    background-size: 196rpx 206rpx;
+}
+.d_list01 view,.d_list02 view,.d_list03 view{
+    display: inline-block;
+    height: 44rpx;
+    width: 42rpx;
+}
+.d_list01 view{
+    background-position: 0 -4rpx;
+}
+.d_list02 view{
+    background-position: 0 -44rpx;
+}
+.d_list03 view{
+    background-position: 0 -90rpx;
+}
+/*底部显示*/
+.bottom_box{
+    padding: 30rpx  30rpx;
+    display: flex;
+}
+.list_b{
+   flex: 3;
+  
+}
+.bo_item{
+    margin: 0 auto;
+    background: #fff;
+    height: 160rpx;
+    width: 160rpx;
+    border-radius:  50%;
+    border: solid 2px #f0f0f0;
+    font-size: 40rpx;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-flow: column wrap;
+    color: #1cb1ff;
+}
+.bo_item.active{
+    color: #fff;
+    background: #1cb1ff;
+    border: solid 2px #fff;
+}
+.bo_item view{
+    display: block;
+
+}
+.bo_item view:first-child{
+    height: 58rpx;
+    width: 46rpx;
+    background-position: -53rpx -87rpx;
+}
+.bo_item view:last-child{
+  font-size: 28rpx;
+}

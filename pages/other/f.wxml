@@ -1,0 +1,18 @@
+<!--营养教程列表 -->
+<view class="index_box">
+    <view wx:if="{{pageId==1}}">
+        <web-view src="https://m.ly.com/healthy/home/index/"></web-view>
+    </view>
+
+    <view wx:if="{{pageId==2}}">
+        <web-view src="https://m.ly.com/healthy/home/index/"></web-view>
+    </view>
+
+    <view wx:if="{{pageId==3}}">
+        <web-view src="https://m.ly.com/healthy/home/index/"></web-view>
+    </view>
+
+    <view wx:if="{{pageId==4}}">
+        <web-view src="https://m.ly.com/healthy/home/index/"></web-view>
+    </view>
+</view>

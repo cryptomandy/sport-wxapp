@@ -1,0 +1,46 @@
+
+<view class="index_box">
+     
+    
+    <navigator url='../heartbrain/b'>
+    <view class='gd_list gd_li01'>
+        <view></view>
+        <text>心脑风险测试</text>
+        <view></view>
+    </view> 
+    </navigator>
+
+    <!-- <navigator url='../sportsrisk/risk'>
+        <view class='gd_list gd_li02'>
+            <view></view>
+            <text>运动风险</text>
+            <view></view>
+    </view> 
+    </navigator> -->
+    <navigator url='../eat/eat'>
+        <view class='gd_list gd_li03'>
+                <view></view>
+                <text>营养</text>
+                <view></view>
+        </view>
+    </navigator>
+    <navigator url='../sports/sports'>
+        <view class='gd_list gd_li04'>
+                <view></view>
+                <text>运动</text>
+                <view></view>
+        </view>
+    </navigator>
+    <!-- <navigator url='../heartlung/h'>
+    <view class='gd_list gd_li00'>
+        <view></view>
+        <text>心肺测试</text>
+        <view></view>
+    </view> 
+    </navigator>  -->
+    <!-- <view class='gd_list gd_li05'>
+        <view></view>
+        <text>就医</text>
+        <view></view>
+   </view>  -->
+</view>

@@ -1,0 +1,195 @@
+/*top顶部*/
+.top_bg{
+    padding-top: 20rpx;
+    background: #6455ba;
+}
+.top_s{
+    margin: 0 auto; 
+    height: 268rpx;
+    width: 268rpx;
+    border: solid 12rpx #5949b2;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.top_s text{
+    font-size: 110rpx;
+}
+.top_bg .canvas{
+    margin-left: 15px;
+    margin-top: -20px;
+}
+
+.time_bg{
+    display: flex;
+    justify-content: center;
+    padding: 50rpx 0;
+    background: #fff;
+    position: relative;
+    align-items: center;
+    font-size: 32rpx;
+}
+.time_icon{
+    height: 48rpx;
+    width: 52rpx;
+    background: url(https://m.ly.com/healthy/health/assets/images/app/small1/stat_i.png?t=20171109) no-repeat;
+    background-size: 196rpx 206rpx;
+    background-position: -54rpx -38rpx;
+}
+.time_infro{
+    font-size: 28rpx;
+    color: #999;
+    margin-left: 20rpx;
+}
+.time_infro text{
+    font-size: 44rpx;
+    color: #333;
+}
+.time_bg:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.can_box{
+    padding-bottom: 30rpx;
+}
+.can_text{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24rpx;
+}
+/*中间显示的部分*/
+.middle_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: center;
+    background: #fff;
+}
+.mi_list{
+    padding: 30rpx 0;
+    flex: 0 0 33.333333%;
+   box-sizing: border-box;
+   display: block;
+   color: #999;
+   font-size: 24rpx;
+   position: relative;
+}
+.mi_list{
+  border-bottom: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+}
+.mi_list:nth-child(3n+3){
+  border-right: none;
+}
+
+.num_1 text{
+  font-size: 40rpx;
+  color: #333;
+}
+.num_2{
+  position: relative;
+}
+.num_2 text:last-child{
+  color: #333;
+}
+.num_2 view:first-child{
+  height: 20rpx;
+  width: 6rpx;
+  background: #6455ba;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+/*中间显示的部分*/
+.num_show{
+    font-size: 14px;
+}
+.num_show text{
+    font-size: 48px;
+}
+.des_show{
+    font-size: 12px;
+}
+.des_show{
+    display:block;
+    width: 85px;
+    height: 20px;
+    border: solid 1px #fff;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+/*底部显示*/
+.bottom_box{
+   padding: 30rpx  30rpx;
+  display: flex;
+}
+.list_b{
+  flex: 3;
+  
+}
+.bo_item{
+  margin: 0 auto;
+  background: #fff;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius:  50%;
+  border: solid 2px #f0f0f0;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-flow: column wrap;
+  color: #6455ba;
+}
+.bo_item.active{
+  color: #fff;
+  background: #6455ba;
+  border: solid 2px #fff;
+}
+.bo_item view{
+  display: block;
+
+}
+.bo_item view:first-child{
+    margin-right: 10rpx;
+    vertical-align: middle;
+    background: url(https://m.ly.com/healthy/health/assets/images/app/small1/stat_i.png?t=20171109) no-repeat;
+    background-size: 196rpx 206rpx;
+}
+.bo_item view:first-child{
+    height: 58rpx;
+    width: 46rpx;
+    background-position: -53rpx -87rpx;
+}
+.bo_item view:last-child{
+  font-size: 28rpx;
+}
+.data_show{
+    padding: 60rpx 30rpx 10rpx;
+}
+.show_bg{
+    padding-bottom: 10rpx;
+    height: 120rpx;
+    display: flex;
+    flex-flow: row wrap;
+}
+.item_li{
+    display: inline-block;
+    background: #8377c9;
+    height: 120rpx;
+}

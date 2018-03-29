@@ -1,0 +1,125 @@
+<!--心肺检测列表 -->
+<view class="index_box">
+    <!--未检测 start  -->
+    <view class='no_check' hidden='{{checkRes==2 ? false : true}}'>
+        <view class='no_cBg'>
+            <view class='no_text' bindtap='CheckTipFun'>
+                <text>心肺功能</text>
+                <view>尚未评测</view>
+                <view>点我前往</view>
+            </view>
+
+            <view class='no_tips'>瞄准把心率区间，长期运动，稳定提升心肺功能</view>
+        </view>
+    </view>
+
+    <!--已经检测 start -->
+    <view class='end_bg' hidden='{{checkRes==1 ? false : true}}'>
+        <view class='end_check'>
+            <view class='end_tit'>
+                <text>评测时间</text>
+                <view>{{checkTime}}</view>
+            </view>
+            <view class='end_res'>
+                <view class='data_res'>
+                    <view class='res_tit'><view></view>数据结果</view>
+                    <view class='icon_res'>
+                        <text>心脏强壮</text><text>正常心率</text>
+                    </view>
+                    <view class='res_item'>
+                        <!--心率结果显示  -->
+                        <view class='r_lists' wx:for="{{resList}}" wx:key="nType" wx:if="{{item.score && item.score!=0}}">
+                            <view class='l_r'>
+                                <text>{{item.name}}</text>
+                                <text>（次/分）</text>
+                            </view>
+                            <view class='pro_bg pro_1'>
+                                <view class='icon_t {{item.iconClass}}' style='left: {{item.iconMargin}}%'>
+                                    <view class='i_s_bg'>
+                                        <view class='r_icon'></view>
+                                        <view class='s_icon'>{{item.score}}</view>
+                                    </view>
+                                </view>
+                                <view class='icon_b' wx:if="{{item.nType==1}}">
+                                    <view class='i_p'>异常</view>
+                                    <view class='i_g'>优秀</view>
+                                    <view class='i_n'>标准</view>
+                                    <view class='i_b'>差</view>
+                                </view>
+                                <view class='icon_b' wx:elif="{{item.nType==3}}">
+                                    <view class='i_g'>优秀</view>
+                                    <view class='i_n'>标准</view>
+                                    <view class='i_b'>差</view>
+                                </view>
+                                <view class='icon_b' wx:else>
+                                    <view class='i_b'>差</view>
+                                    <view class='i_n'>标准</view>
+                                    <view class='i_g'>优秀</view>
+                                </view>
+                                <view class='icon_num'>
+                                    <text wx:for="{{item.checkArr}}" wx:key="index">{{item}}</text>
+                                    <text class='s_i'></text>
+                                </view>
+                            </view>
+                        </view>
+                        <!--心率结果显示  -->
+                    </view>
+                </view>
+                <view class='rem_res'>
+                    <view class='res_tit'><view></view>运动推荐</view>
+                    <view class='icon_res'>
+                        <text>坚持有氧运动</text><text>运动时控制心率</text>
+                    </view>
+                    <view class='res_item'>
+                        <view class='r_lists'>
+                            <view class='l_r'>
+                                <text>目标心率</text>
+                                <text>（次/分）</text>
+                            </view>
+                            <view class='r_r'>122~139</view>
+                        </view>
+                        <view class='r_lists'>
+                            <view class='l_r'>
+                                <text>每日建议运动时长</text>
+                                <text>（分钟）</text>
+                            </view>
+                            <view class='r_r'>15~45</view>
+                        </view>
+                        <view class='r_lists'>
+                            <view class='l_r'>
+                                <text>每周推荐运动</text>
+                                <text>（次）</text>
+                            </view>
+                            <view class='r_r'>3~5</view>
+                        </view>
+                        <!-- <view class='btn_bg' bindtouchend='CheckTipFun'>
+                            <view class='btn_check'><text>重测</text></view>
+                        </view> -->
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- <view class='his_bg' bindtap='CheckTipFun'>
+            <view class='end_tit'>
+                <text>历史评测</text>
+                <view>2017-09-01</view>
+            </view>
+        </view> -->
+    </view>
+
+    <!--测试示例  -->
+    <view class='example_bg' hidden='{{checkRes==3 ? false : true}}'>
+        <view class='vedio_bg'>
+            <video src="{{example.url}}" objectFit="fill" poster="{{example.imageUrl}}"></video>
+        </view>
+        <view class='tip_t'>
+            <view>如果您的心率带已在身边，请先佩戴好，</view>  
+            <view>可以参考这个示范小视频，并按测试的要求做好准备</view>
+        </view>
+        <view class='start_bg' bindtap='startCheck'>
+            <text>开始测试</text>
+        </view>
+    </view>
+</view>
+

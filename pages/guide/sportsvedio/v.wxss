@@ -1,0 +1,116 @@
+
+.top_bg image{
+    width: 100%;
+    height: 360rpx;
+    display: block;
+}
+
+
+.top_bg view{
+    width: 100%;
+    height: 360rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_detail{
+    background: #fff;
+}
+.s_tit{
+    position: relative;
+    padding: 20rpx 30rpx;
+    
+}
+.s_tit text{
+    display: inline-block;
+    margin-right: 15rpx;
+    height: 30rpx;
+    width: 6rpx;
+    background: #1bb1fe;
+    vertical-align: middle;
+    margin-top: -4rpx;
+}
+.s_infro{
+    line-height: 40rpx;
+    padding: 0 30rpx 20rpx;
+    color: #999;
+    font-size: 24rpx;
+}
+
+
+.vedio_bg{
+    margin-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+.v_items{
+    display: flex;
+    padding: 20rpx 30rpx;
+    position: relative;
+    background: #fff;
+    font-size: 22rpx;
+}
+.v_items:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;   
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.v_items video{
+    width: 340rpx;
+    height: 184rpx;
+    display: inline-block;
+}
+.v_left,v_right{
+    height: 184rpx;
+}
+.v_right{
+    height: 184rpx;
+    margin-left: 24rpx;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    position: relative;
+}
+.v_right view{
+    flex: 2;
+}
+.tit_v{
+     font-size: 28rpx;
+}
+.infro_v{
+    color: #999;
+    position: absolute;
+    bottom: 0;
+}
+.type_v{
+    margin-top: 22rpx;
+}
+.type_v text{
+    color: #30b8fd;
+}   
+
+.no_more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding : 28rpx 0 ;
+    background: #fff;
+    color: #666;
+    align-items: center;
+    font-size: 26rpx;
+}
+.no_more view{
+    display: inline-block;
+    margin: 0 15rpx;
+}
+.no_more text{
+    height: 1px;
+    background: #eee;
+    width: 120rpx;
+}

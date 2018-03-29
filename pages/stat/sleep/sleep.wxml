@@ -1,0 +1,73 @@
+<!--睡眠统计 -->
+<view class="index_box container">
+    <scroll-view>
+        <view class="top_bg">
+            <view class="top_s">
+                <view class="top_text">
+                    <text>{{sScores}}</text>分
+                </view>
+            </view>
+            <view class='can_box'>
+
+                <view class='data_show'>
+                    <view class='show_bg' >
+                        <view class='item_li' wx:for="{{showList}}" wx:key="Id" style='flex:{{item.percent}};background:{{item.bgColor}}'></view>
+                    </view>
+                    <view class='can_text'>
+                        <text>{{canText.startTime}}</text>
+                        <text>{{canText.soberTime}}</text>
+                    </view>
+                </view>
+            </view>
+            
+        </view>
+        <view class='time_bg'>
+            <view class='time_icon'></view>睡眠总时长
+            <view class='time_infro'>
+                <text>{{sleepStat.totalSleep[0]}}</text>时<text>{{sleepStat.totalSleep[1]}}</text>分
+            </view>
+        </view>    
+        <!--中间的详情显示-->
+        <view class="middle_box">
+            <view class="mi_list mi_list1">
+                <view class="num_l num_1">
+                    <text>{{sleepStat.deep[0]}}</text>时<text>{{sleepStat.deep[1]}}</text>分
+                </view>
+                <view class="num_l num_2">
+                    <view></view>
+                    <text>深睡{{percentNum.deepPer}}%</text>
+                </view> 
+            </view>
+            <view class="mi_list mi_list2">
+                <view class="num_l num_1">
+                    <text>{{sleepStat.light[0]}}</text>时<text>{{sleepStat.light[1]}}</text>分
+                </view>
+                <view class="num_l num_2">
+                    <view></view>
+                    <text>浅睡{{percentNum.lightPer}}%</text>
+                </view>
+            </view>
+            <view class="mi_list mi_list3">
+                <view class="num_l num_1">
+                    <text>{{sleepStat.sober[0]}}</text>时<text>{{sleepStat.sober[1]}}</text>分
+                </view>
+                <view class="num_l num_2">
+                    <view></view>
+                    <text>清醒时长</text>
+                </view>
+            </view>
+        </view>
+
+        <navigator url="../sleepchart/c">
+        <view class="bottom_box">
+            <view class="list_b">
+                <view class="bo_item active">
+                    <view></view><view>统计</view>
+                </view>
+            </view>
+        </view>
+        </navigator>
+
+    </scroll-view>
+
+</view>

@@ -1,0 +1,129 @@
+.index_box{
+    padding-bottom: 70rpx;
+}
+/*设计排版  */
+
+ .v_items{
+    display: flex;
+    justify-content: flex-start;
+    padding: 34rpx;
+    position: relative;
+    background: #fff;
+    align-items: center;
+    align-content: center;
+    font-size: 22rpx;
+}
+.v_items:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;   
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.v_items video{
+    width: 320rpx;
+    height: 184rpx;
+    display: inline-block;
+}
+.v_left,.v_right{
+    height: 184rpx;
+}
+.v_right{
+    margin-left: 24rpx;
+}
+.tit_v{
+     font-size: 32rpx;
+     
+}
+.infro_v{
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #999;
+    margin-top: 6rpx;
+}
+
+.type_v text{
+    color: #30b8fd;
+}   
+.suit_v{
+    margin-top: 4rpx;
+}
+.v_icons{
+    position: absolute;
+    bottom: 34rpx;
+}
+/* 一栏排版 */
+ /* .v_items{
+    padding: 34rpx;
+    position: relative;
+    background: #fff;
+    font-size: 22rpx;
+}
+.v_items:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.v_items video{
+    width: 100%;
+    height: 240rpx;
+    display: inline-block;
+}
+.tit_v{
+     font-size: 32rpx;
+}
+.v_icons{
+     margin-top: 8rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.v_icons view{
+    display: inline-block;
+}
+.infro_v{
+    margin-top: 8rpx;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #999;
+}
+.type_v text{
+    color: #30b8fd;
+}  */
+
+.no_more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding : 28rpx 0 ;
+    background: #fff;
+    color: #666;
+    align-items: center;
+    font-size: 26rpx;
+}
+.no_more view{
+    display: inline-block;
+    margin: 0 15rpx;
+}
+.no_more text{
+    height: 1px;
+    background: #eee;
+    width: 120rpx;
+}

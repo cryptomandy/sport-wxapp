@@ -1,0 +1,27 @@
+<!--运动教程列表 -->
+<view class="index_box">
+    <block wx:for="{{vedioList}}"wx:key="DataId" >
+        <navigator url='../sportsvedio/v?parentid={{item.AVParentId}}'>
+            <view class='v_items' id="{{item.DataId}}" data-nameval='{{item.AVTitle}}'>
+                <view class='v_left'>
+                    <view></view>
+                    <image src="{{item.AVCoverUrl}}" ></image>
+                </view>
+                <view class='v_right'>
+                    <view class='tit_v'>{{item.AVTitle}}</view>
+                    <view class='infro_v'>{{item.AVNote}}</view>
+                    <view class='d_box'>
+                        <view class='type_v'>类型：<text>{{item.AVItemTypeText}}</text></view>
+                        <view class='suit_v'>适合人群：<text>{{item.AVForUserType}}</text></view>
+                    </view>
+                    
+                </view>
+            </view>
+        </navigator>
+        
+    </block>
+    
+    <view class='no_more'>
+        <text></text><view>{{textMsg}}</view><text></text>
+    </view>
+</view>

@@ -1,0 +1,58 @@
+<!--心肺检测列表 -->
+<view class="index_box">
+    <view class='end_check'>
+        <view class='end_bg' hidden='{{checkRes==2 ? false : true}}'>
+            <view class='e_check'>
+                <view class='item_c'>
+                    <text>舒张血压</text>
+                    <input placeholder='请输入你的舒张血压' type='number' bindinput='disIput' value='{{DiastolicPressure}}'></input>
+                </view>
+                <view class='item_c'>
+                    <text>收缩血压</text>
+                    <input placeholder='请输入你的收缩血压'  type='number' bindinput='sysIput' value='{{SystolicPressure}}'></input>
+                </view>
+                <view class='tip_text'>
+                    <text class='t_t01'>{{statusT}}</text>
+                </view>
+            </view>
+            <view class="btn_bg" bindtap="startCheck"><text>开始测试</text></view>
+        </view>
+        
+        <!--结果  -->
+        <view class='no_check' hidden='{{checkRes==1 ? false : true}}'>
+            <view class='end_tit'>
+                <text>评测时间</text>
+                <view>{{AHCreateDate}}</view>
+            </view>
+            <view class='end_res'>
+                <view class='res_tit'><view></view>数据结果</view>
+            </view>
+            <view class='res_bg'>
+                <view class='res_li'>
+                    <view class='icon_b'><text></text>静态心率</view>
+                    <text>{{AHResting}}</text>
+                </view>
+                <view class='res_li'>
+                    <view class='icon_x'><text></text>动态心率</view>
+                    <text>{{AHRnning}}</text>
+                </view>
+            </view>
+            <view class='res_bg'>
+                <view class='res_li'>
+                    <view class='icon_b'><text></text>舒张血压</view>
+                    <text>{{DiastolicPressure}}</text>
+                </view>
+                <view class='res_li'>
+                    <view class='icon_x'><text></text>收缩血压</view>
+                    <text>{{SystolicPressure}}</text>
+                </view>
+            </view>
+            <view class='tip_text tip_text2'>
+                <view>{{resultShow}}</view>
+            </view>
+            <view class="btn_bg" bindtap="refreshCheck"><text>重新测试</text></view>
+        </view>
+    </view>
+
+</view>
+

@@ -1,0 +1,337 @@
+/*未检测  */
+.no_check{
+    height: 100%;
+    width: 100%;
+}
+.no_text{
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    border: solid 8rpx #e0e0e0;
+    width: 480rpx;
+    height: 480rpx;
+    border-radius: 50%;
+    background-image:-webkit-linear-gradient(to top,  #f39d58 ,#ff493b);
+    background-image:linear-gradient(to top, #f39d58 ,#ff493b); 
+}
+.no_text text{
+    display: block;
+    font-size: 36rpx;
+    margin-bottom: 20rpx;
+}
+.no_text view{
+     display: block;
+     font-size: 56rpx;
+}
+.no_tips{
+    border: solid 1px #b7b7b7;
+    color: #999;
+    width: 68%;
+    margin: 15% auto 0;
+    font-size: 24rpx;
+    border-radius: 40rpx;
+    padding: 8rpx 14rpx;
+}
+
+/*已经测试  */
+
+.end_check{
+    border-radius: 10rpx;
+    background: #fff;
+    margin: 20rpx 30rpx;
+}
+.end_tit{
+    display: flex;
+    position: relative;
+    padding: 20rpx 30rpx ;
+    justify-content: space-between;
+    font-size: 32rpx;
+}
+.end_tit view{
+    font-size: 24rpx;
+    color: #999;
+}
+.end_res{
+    position: relative;
+}
+/* 数据结果 */
+
+.data_res .res_item{
+    position: relative;
+    padding: 48rpx 30rpx 0;
+}
+
+.data_res .r_lists{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 48rpx;
+    position: relative;
+}
+.data_res .l_r{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+}
+.data_res .pro_bg{
+    width: 70%;
+    position: relative;
+}
+.icon_t{
+    display: inline-block;
+    position: absolute;
+    font-size: 18rpx;
+    text-align: center;
+    top: -60%;
+    left: 0;
+    z-index: 2;
+}
+.i_s_bg{
+    position: relative;
+    height: 58rpx;
+    width: 38rpx;
+    
+}
+.r_icon{
+    display: block;
+    background: #3dd7a3;
+    color: #fff;
+    width: 38rpx;
+    height: 38rpx;
+    line-height: 38rpx;
+    border-radius: 50% 50%  0 50%;
+    transform:rotate(45deg);
+}
+.s_icon{
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 38rpx;
+    line-height: 38rpx;
+    height: 38rpx;
+}
+/*差  */
+.r_b .r_icon{
+    background: #fa543f;
+}
+/*标准  */
+.r_n .r_icon{
+    background: #3dd7a3;
+}
+/* 优秀  */
+.r_g .r_icon{
+    background: #5acaff;
+}
+/*异常  */
+.r_p .r_icon{
+    background: #ff7e00;
+}
+
+
+.icon_b{
+    height: 40rpx;
+    line-height: 40rpx;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon_b view{
+    display: block;
+    text-align: center;
+    flex: 1;
+    /* border-left: solid 1px #fff;
+    border-right: solid 1px #fff; */
+    color: #fff;
+    font-size: 20rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    margin-top:5rpx;
+}
+.i_b{
+    background: #fa543f;
+}
+.i_n{
+    background: #3dd7a3;
+}
+.i_g{
+    background: #5acaff;
+}
+.i_p{
+    background: #ff7e00;
+}
+
+.icon_num{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20rpx;
+    color: #999;
+}
+.icon_num text{
+    flex: 1;
+    display: inline-block;
+    text-align: right;
+}
+.icon_num .s_i{
+    flex: 0.94;
+}
+.pro_1 .icon_num .s_i{
+    flex: 0.86;
+}
+/*运动推荐  */
+.rem_res{
+     position: relative;
+     padding-bottom: 15rpx;
+}
+.rem_res .res_item{
+    position: relative;
+    padding: 20rpx 30rpx 0;
+}
+.res_tit{
+    position: relative;
+    padding: 20rpx 30rpx 0;
+}
+.res_tit view{
+    display: inline-block;
+    width: 6rpx;
+    background: #f65e51;
+    height: 30rpx;
+    line-height: 30rpx;
+    vertical-align: middle;
+    margin: -4rpx 16rpx 0 0;
+}
+.end_res:before,.rem_res:before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.icon_res{
+    padding: 0 30rpx 20rpx;
+}
+.icon_res text{
+    display: inline-block;
+    background: #ffe6b6;
+    color: #333;
+    font-size: 24rpx;
+    padding: 4rpx 15rpx;
+    margin: 20rpx 12rpx 0 0;
+}
+.rem_res .r_lists{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20rpx;
+    position: relative;
+}
+.rem_res .l_r{
+    display: flex;
+    flex-flow: column wrap;
+    width: 250rpx;
+}
+.l_r text{
+    display: block;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.l_r text:first-child{
+    font-size: 28rpx;
+}
+.l_r text:last-child{
+    font-size: 20rpx;
+    color: #999;
+}
+.r_r{
+    font-size: 32rpx;
+}
+
+
+.his_bg{
+    padding: 0 30rpx;
+    position: relative;
+}
+.his_bg .end_tit:after{
+    position: absolute;
+    top: 50%;
+    margin-top: -8rpx;
+    right: 30rpx;
+    content: "";
+    display: inline-block;
+    width: 20rpx;
+    height: 20rpx;
+    border-right: 2rpx solid #ccc;
+    border-bottom: 2rpx solid #ccc;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 0;
+}
+.his_bg .end_tit{
+    background: #fff;
+    border-radius: 10rpx;
+    position: relative;
+    padding-right: 60rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_bg{
+    position: absolute;
+    right: 30rpx;
+    bottom: 20rpx;
+    width: 164rpx;
+    height: 164rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 36rpx;
+    border-radius: 50%;
+    line-height: 164rpx;
+    border: solid 1px #f66356;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_check{
+    width: 150rpx;
+    height: 150rpx;
+    text-align: center;
+    background: #f65e51;
+    color: #fff;
+    font-size: 36rpx;
+    border-radius: 50%;
+    line-height: 150rpx;
+}
+
+/*测试示例  */
+.vedio_bg video{
+    height: 360rpx;
+    display: block;
+    width: 100%;
+}
+.tip_t{
+    font-size: 24rpx;
+    color: #999;
+    padding: 40rpx 60rpx;
+    text-align: center;
+}
+.start_bg{
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #f65e51;
+    font-size: 28rpx;
+    color: #fff;
+    text-align: center;
+    width: 310rpx;
+    margin: 0 auto;
+    border-radius: 10rpx;
+}

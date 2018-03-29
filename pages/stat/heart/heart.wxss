@@ -1,0 +1,141 @@
+.status_bg {
+    padding-bottom: 20rpx;
+}
+/*top顶部*/
+.top_bg{
+    padding: 20rpx 0 90rpx 0;
+    background: #f65e51;
+}
+
+.top_t{
+    margin:  0 auto;
+    height: 238rpx;
+    width: 270rpx;
+    background: url(https://m.ly.com/healthy/health/assets/images/small/brain_icon.png?t=20171109) no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+    color: #f65e51;
+    display: flex;
+    flex-flow: column wrap;
+}
+.top_t text{
+    font-size: 72rpx;
+    display: block;
+}
+/*中间历史*/
+.his_tit{
+    padding: 0 30rpx;
+    background: #fff;
+    height: 90rpx;
+    line-height: 90rpx;
+    position: relative;
+}
+.his_tit:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.his_tit text{
+    font-size: 28rpx;
+    display: block;
+
+}
+
+.his_list{
+    position: relative;
+    line-height: 90rpx;
+    padding: 0 30rpx;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.his_list:after,.an_list:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.list_m{
+    font-size: 28rpx;
+    text-align: center;
+}
+.his_list view{
+    display: block;
+}
+.list_l,.list_m{
+    display: inline-block;
+    flex: 0 0 31%;
+}
+.list_r{
+    display: inline-block;
+    flex: 0 0 38%;
+    text-align: right;
+}
+.list_r{
+    color: #999;
+    font-size: 24rpx;
+    position: relative;
+}
+
+.list_r text:first-child{
+    font-size: 40rpx;
+    color: #f65e51;
+}
+.list_r text:last-child{
+    color: #f65e51;
+}
+.his_more{
+    
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto 20rpx;
+}
+.tip_r{
+    color: #f65e51;
+}
+.his_more text{
+    content: "";
+    display: inline-block;
+    width: 28rpx;
+    height: 28rpx;
+    border-right: 4rpx solid #cecece;
+    border-bottom: 4rpx solid #cecece;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 0;
+    margin-left: 15rpx;
+}
+.no_more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding : 28rpx 0 ;
+    background: #fff;
+    color: #666;
+    align-items: center;
+    font-size: 26rpx;
+}
+.no_more view{
+    display: inline-block;
+    margin: 0 15rpx;
+}
+.no_more text{
+    height: 1px;
+    background: #e5e5e5;
+    width: 120rpx;
+}

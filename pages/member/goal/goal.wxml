@@ -1,0 +1,34 @@
+
+<view class="index_box">
+    <view class='top_bg'>
+        <view class="userinfo">
+             <view class='img_box'>
+                <image class="userinfo-avatar" src="{{user.userInfo.avatarUrl}}" background-size="cover"></image>
+            </view>
+            <view class='name_in'>{{user.userInfo.nickName}}</view>
+        </view>
+    </view>
+     <view class='tips_detail' hidden='{{isShow ? false : true}}'>请设定自己的目标。</view> 
+    <view class='item_bg'>
+        <picker value="{{spIndex}}"  range="{{sportArr}}" bindchange="bindSportChange">
+            <view class="his_list">
+                <view class="list_l">运动目标</view>
+                <view class="list_r">{{sportArr[spIndex]}}步</view> 
+            </view>
+        </picker>
+        
+        <picker  value="{{sleepIndex}}" range="{{sleepArr}}" bindchange="bindSleepChange">
+            <view class="his_list">
+                <view class="list_l">睡眠目标</view>
+                <view class="list_r" >{{sleepArr[sleepIndex]}}</view>
+            </view>
+        </picker>
+
+        <picker value="{{wIndex}}" range="{{wightArr}}" bindchange="bindWightChange">
+            <view class="his_list">
+                <view class="list_l">体重目标</view>
+                <view class="list_r" >{{wightArr[wIndex]}}千克</view> 
+            </view>
+        </picker>
+    </view>
+</view>

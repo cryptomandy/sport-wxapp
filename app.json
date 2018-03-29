@@ -1,0 +1,87 @@
+{
+    "pages":[
+
+        "pages/index/index",
+        "pages/facility/facility/facility",
+        
+        "pages/member/member/member",
+
+        "pages/facility/addnew/n",
+        
+        "pages/stat/heart/heart",
+        
+        "pages/guide/guide/g",
+        "pages/stat/stepchart/t",
+        "pages/stat/sleepchart/c",
+        
+        "pages/guide/sports/sports",
+        "pages/guide/eat/eat",
+         
+
+        "pages/guide/heartlung/h",
+        "pages/guide/heartbrain/b",
+        
+
+        "pages/stat/sleep/sleep",
+        
+        "pages/stat/stat/stat",
+        "pages/stat/steps/steps",
+        
+        
+        "pages/other/f",
+        
+        
+        "pages/guide/sportsvedio/v",
+        
+        
+        "pages/member/goal/goal",
+        "pages/member/person/person",
+        
+        "pages/guide/sportsrisk/risk",
+        
+        "pages/stat/health/health",
+    
+        "pages/member/bind/bind"
+        
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#1cb1ff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle":"#333333",
+        "backgroundColor":"#f8f8f8"
+    },
+    "tabBar":{
+        "borderStyle":"white",
+        "color": "#333333",
+        "selectedColor": "#01a8ff",
+        "backgroundColor": "#fff",
+        "list":[
+            {
+                "pagePath":"pages/index/index",
+                "iconPath":"pages/image/index/index1.png",
+                "selectedIconPath":"pages/image/index/index1_h.png",
+                "text":"首页"
+            },
+            {
+                "pagePath": "pages/stat/stat/stat",
+                "iconPath":"pages/image/index/index2.png",
+                "selectedIconPath":"pages/image/index/index2_h.png",
+                "text": "统计"
+            },
+            {
+                "pagePath": "pages/guide/guide/g",
+                "iconPath": "pages/image/index/index3.png",
+                "selectedIconPath": "pages/image/index/index3_h.png",
+                "text": "指导"
+            },
+            {
+                "pagePath": "pages/member/member/member",
+                "iconPath":"pages/image/index/index4.png",
+                "selectedIconPath":"pages/image/index/index4_h.png",
+                "text": "我的"
+            }
+            
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+<!--身高体重测试页  -->
+<view class="index_box container">
+    <scroll-view>
+        <!--没有检测结果-->
+        <view class="top_bg top_s1" hidden="{{hStatus == 1 ? false : true}}" >
+            <view class="top_s">
+                <view class="top_text">
+                    <text>尚未检测</text>
+                </view>
+            </view>
+            <view class="btn_bg" bindtouchend="startCheck"><text>开始测试</text></view>
+        </view>
+        <!--检测输入-->
+        <view class="top_s2" hidden="{{hStatus == 2 ? false : true}}" >
+            <view class="input_item">
+                <text>身高</text>
+                <input  bindinput="heightInput" value="{{height}}" maxlength="8" placeholder="请输入您的身高" />cm
+            </view>
+            <view class="input_item">
+                <text>体重</text>
+                <input  bindinput="weightInput" value="{{weight}}" maxlength="8" placeholder="请输入您的体重" />kg
+            </view>
+            <view class="btn_bg" bindtouchend="startCalculate"><text>开始计算</text></view>
+        </view>
+        <!--检测结果显示-->
+        <view class="top_bg top_s3" hidden="{{hStatus == 3 ? false : true}}">
+            <view class="top_s">
+                <view class="top_text">
+                    <text>BMI</text>
+                    <text class="tip_num">{{BMINum}}</text>
+                    <view class="tip_res">{{BMItip}}</view>
+                </view>
+                <!--<view class="tip_res">您是健康体重但已不苗条，小心;您是健康体重但已不苗条，小心</view>-->
+            </view>
+            <view class="btn_bg" bindtap="refreshCheck"><text>重测</text></view>
+        </view>
+    </scroll-view>
+</view>

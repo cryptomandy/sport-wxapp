@@ -1,0 +1,47 @@
+.index_box{
+    padding: 0 4.5% 30rpx;
+    width: 91%;
+}
+.gd_list{
+    height: 190rpx;
+    margin-top:  30rpx;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gd_list view{
+    display: inline-block;
+    width: 40rpx;
+    background: #fff;
+    height: 1px;
+}
+.gd_list text{
+    font-size: 36rpx;
+    width: 230rpx;
+    text-align: center;
+}
+.gd_li00{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg00.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}
+.gd_li01{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg01.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}
+.gd_li02{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg02.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}
+.gd_li03{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg03.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}
+.gd_li04{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg04.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}
+.gd_li05{
+    background: url(https://m.ly.com/healthy/health/assets/images/small/g_bg05.jpg?t=20171109) no-repeat;
+    background-size: 100% 100%;
+}

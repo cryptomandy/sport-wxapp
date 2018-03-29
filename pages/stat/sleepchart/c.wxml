@@ -1,0 +1,103 @@
+<!--睡眠统计日，周，月 -->
+<view class="container">
+	<!--柱形图-->
+	<view class="cancas_bg">
+     <scroll-view  bindtouchstart='getTouchStartXY' bindtouchend='scrollShowDetail'>
+        <view class='x_list_bg'>
+            <view class='has_list' hidden='{{totalList > 0 ? false : true}}'>
+                <view class='x_item' wx:for="{{showList}}" wx:key="Id" bindtap='clickShowDetail' id='{{item.Id}}'>
+                    <view class='x_bg'>
+                        <view class='item_bg'>
+                            <!-- <view class='c_text'>{{item.APSleepTime}}</view> -->
+                            <view class='column' style='height:{{item.PercentShallow}}rpx;background:{{item.ShaBgColor}};width:{{item.Width}}rpx'></view>
+                            <view class='column' style='height:{{item.PercentDeep}}rpx;background:{{item.DeepBgColor}};width:{{item.Width}}rpx'></view>
+                            
+                        </view>
+                        <view class='item_text' style='width:{{item.Width}}rpx'>
+                            <view class='c_time'>{{item.ShowTime}}</view>
+                            <view class='c_tip'>{{item.CurText}}</view>
+                        </view>
+                    </view>
+                    <view class='line_w'></view>
+                    <!-- <view class='aim_line' style='bottom:{{aimHeight}}rpx'></view> -->
+                </view>
+            </view>
+            
+            <view class='no_list' hidden='{{totalList == 0 ? false : true}}'>当前统计类型没有统计信息</view>
+        </view>
+    </scroll-view>
+    </view>
+
+    <!--中间的详情显示-->
+    <view class='cur_time'> <text>{{statInfro.curDate}}</text>睡眠详情</view>
+    <view class="middle_box">
+        <view class="mi_list mi_list1">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num1[0]}}</text>时<text>{{statInfro.total.Num1[1]}}</text>分
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"睡眠时长":"日均睡眠"}} </text>
+            </view> 
+        </view>
+        <view class="mi_list mi_list2">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num2[0]}}</text>时<text>{{statInfro.total.Num2[1]}}</text>分
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"深睡时长":"日均深睡"}} </text>
+            </view>
+        </view>
+       <view class="mi_list mi_list3">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num3[0]}}</text>时<text>{{statInfro.total.Num3[1]}}</text>分
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"浅睡时长":"日均浅睡"}} </text>
+            </view>
+        </view>
+        <view class="mi_list mi_list4">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num4}}</text>
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"入眠时间":"日均入眠"}} </text>
+            </view>
+        </view>
+         <view class="mi_list mi_list4">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num5}}</text>
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"醒来时间":"日均醒来"}} </text>
+            </view>
+        </view>
+         <view class="mi_list mi_list4">
+            <view class="num_l num_1">
+                <text>{{statInfro.total.Num6}}</text>分钟
+            </view>
+            <view class="num_l num_2">
+                <view></view>
+                <text>{{sType==3?"清醒时长":"日均清醒"}} </text>
+            </view>
+        </view>
+    </view>
+
+    <!--底部的分类-->
+    <view class="bottom_box">
+        <block wx:for="{{bottomTab}}"  wx:key="index">
+            <view class="list_b" bindtap="tabShowType" data-typeId="{{item.sType}}">
+                <view class="bo_item active" wx:if="{{item.checked}}">
+                    <view>{{item.num}}</view><view>{{item.name}}</view>
+                </view>
+                <view class="bo_item" wx:else>
+                    <view>{{item.num}}</view><view>{{item.name}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

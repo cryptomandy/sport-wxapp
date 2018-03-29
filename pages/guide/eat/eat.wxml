@@ -1,0 +1,24 @@
+<!--营养教程列表 -->
+<view class="index_box">
+    <view class='scroll_bg'>
+        <block wx:for="{{vedioList}}" wx:key="DataId">
+            <view class='v_items'>
+                <view class='v_left'>
+                    <video src="{{item.AVVideoUrl}}" objectFit="fill" poster="{{item.AVCoverUrl}}"></video>
+                </view>
+                <view class='v_right'>
+                    <view class='tit_v'>{{item.AVTitle}}</view>
+                    <view class='infro_v'>{{item.AVNote}}</view>
+                    <view class='v_icons'>
+                        <view class='type_v'>类型：<text>{{item.AVItemTypeText}}</text></view>
+                        <view class='suit_v'>适合人群：<text>{{item.AVForUserType}}</text></view>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+        <view class='no_more'>
+            <text></text><view>{{textMsg}}</view><text></text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,62 @@
+<!--运动风险 -->
+<view class="index_box">
+    <!--未检测  -->
+    <view class='no_check' hidden='{{checkRes==2 ? false : true}}'>
+        <view class='no_cBg'>
+            <view class='no_text' bindtouchend='CheckTipFun'>
+                <text>运动风险</text>
+                <view>尚未评测</view>
+                <view>点我前往</view>
+            </view>
+
+            <view class='no_tips'>运动风险测试将通过8个动作和问题直观的反应出您在各评估项的评分并指出其中可能存在的运动损伤风险</view>
+        </view>
+    </view>
+    <!--已经检测  -->
+    <view class='end_check' hidden='{{checkRes==1 ? false : true}}'>
+        <view class='end_tit'>
+            <text>评测时间</text>
+            <view>2017-09-01</view>
+        </view>
+        <view class='end_res'>
+            <view class='res_tit'><view></view>数据结果</view>
+            <view class='res_item'>
+                <view class='r_tips'>整体动作功能 <text class='general_i icon_d'>一般</text></view>
+                <view class='r_detail'>该动作功能不良会引发多关节损伤问题，包括了腰椎、髋、膝关节的机型/慢性损伤，在运动汇总主要表现为关节疼痛、要被部不适。</view>
+            </view>
+            <view class='res_item'>
+                <view class='r_tips'>不对称稳定性 <text class='good_i icon_d'>良好</text></view>
+                <view class='r_detail'>该动作功能不良会引发多关节损伤问题，包括了腰椎、髋、膝关节的机型/慢性损伤，在运动汇总主要表现为关节疼痛、要被部不适。</view>
+            </view>
+            <view class='res_item'>
+                <view class='r_tips'>对称稳定性 <text class='bad_i icon_d'>差</text></view>
+                <view class='r_detail'>该动作功能不良会引发多关节损伤问题，包括了腰椎、髋、膝关节的机型/慢性损伤，在运动汇总主要表现为关节疼痛、要被部不适。</view>
+            </view>
+        </view>
+
+        <view class='btn_bg' bindtouchend='CheckTipFun'>
+            <view class='btn_check'><text>重测</text></view>
+        </view>
+    </view>
+
+    <!--弹框  -->
+    <view class='ui_shadow' bindtouchend='closeShadow' hidden='{{isShadow ? false : true}}'>
+    </view>
+    <view class='ui_box' hidden='{{isShadow ? false : true}}'>
+        <view class='ui_bg'>
+            <view class='ui_tit'>
+                <view>运动风险筛查测试</view>
+                <view class='line_g'></view>
+                <text>用于筛查潜在的运动风险</text>
+                <text>帮您降低运动损伤的可能</text>
+            </view>
+            <view class='ui_con'>
+                <view>开始测试前请确认做好准备</view>
+                <view>1. 换上运动服</view>
+                <view>2. 铺好瑜伽垫</view>
+            </view>
+            <view class='btn_ci' bindtouchend='startCheckFun'>我已准备好测试</view>
+        </view>
+    </view>
+</view>
+

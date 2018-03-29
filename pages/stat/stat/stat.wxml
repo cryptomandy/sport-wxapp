@@ -1,0 +1,79 @@
+<view class="index_box container">
+    <scroll-view>
+
+        <navigator url='../steps/steps'>
+        <view class='w_box'>
+            <view class='p_po'>
+                <view class="wrap_c">
+                    <view class='circle {{isStyle.cirClass}}'>
+                        <view class='percent_s left' style='-webkit-transform:{{isStyle.isLDeg}}'></view>
+                        <view class='percent_s right {{isStyle.rightClass}}'></view>
+                    </view>
+                    <view class='num'></view>
+                </view>
+                <view class='t_box'>
+                    <view class='t_text'>
+                        <!--已连设备  -->
+                        <view class="wrap_text">
+                            <image class="icon_show" src='../../image/index/can_s_icon.png'></image>
+                            
+                            <view class="num_show"><text>{{stepData.ASSteps}}</text><view class='n_font'>步</view></view>
+
+                            <view class='total_s'>
+                                <view> {{stepData.ASMileage}}公里</view><view class='line_bg'></view><view class=''>{{stepData.ASCAL}}千卡</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </navigator>
+
+        <view class="detail_data">
+            <navigator url="../sleep/sleep">
+                <view class="d_list">
+                <view class='d_result'>
+                        <view class='d_icon1'></view>
+                        <view class='d_detail'>
+                            <text class='d_tit'>昨晚睡眠</text>
+                            <text>{{detail.APStartTime}}  {{hhmm.sleepT}}</text>
+                        </view>
+                    </view>
+                    <view class='d_score' style='color:#6455ba'>
+                        <text>{{detail.APScore}}</text>分
+                    </view>
+                </view>
+            </navigator>
+            <navigator url="../heart/heart">
+            <view class="d_list">
+                <view class='d_result'>
+                    <view class='d_icon2'></view>
+                    <view class='d_detail'>
+                        <text class='d_tit'>最近心率</text>
+                        <text>{{detail.AHStartTime}}  {{hhmm.brainT}}</text>
+                    </view>
+                </view>
+                <view class='d_score' style='color:#f65e51'>
+                    <text>{{detail.AHResting}}</text>次/分钟
+                </view>
+            </view>
+            </navigator>
+            <navigator url="../health/health">
+            <view class="d_list">
+                <view class='d_result'>
+                    <view class='d_icon3'></view>
+                    <view class='d_detail'>
+                        <text class='d_tit'>最近健康指数（BMI）</text>
+                        <text>{{detail.BMITime}}  {{hhmm.BmiT}}</text>
+                    </view>
+                </view>
+                <view class='d_score' style='color:#08bbc2'>
+                    <text>{{detail.BMI}}</text>
+                </view>
+            </view>
+            </navigator>
+        </view>
+
+        
+    </scroll-view>   
+</view>

@@ -1,0 +1,84 @@
+  <view class='index_box container'>
+
+<scroll-view >
+    <view class='w_box'>
+        <view class='p_po'>
+            <view class="wrap_c">
+                <view class='circle {{isStyle.cirClass}}'>
+                    <view class='percent_s left' style='-webkit-transform:{{isStyle.isLDeg}}'></view>
+                    <view class='percent_s right {{isStyle.rightClass}}'></view>
+                </view>
+                <view class='num'></view>
+            </view>
+            <view class='t_box'>
+                <view class='t_text'>
+                    <!--未连设备  -->
+                    <view class="wrap_text" bindtouchend='connectF' hidden='{{!isConnect ? false : true}}'>
+                        <image class="icon_show" src='../image/index/can_s_icon.png'></image>
+                        <view class="bind_t1"><text>相知多年 值得托付</text></view>
+                        <view class='bind_t2'><text>智能生活玩起来</text></view>
+                    </view>
+                    <!--已连设备  -->
+                    <view class="wrap_text" hidden='{{isConnect ? false : true}}'>
+                        <image class="icon_show" src='../image/index/can_s_icon.png'></image>
+                        
+                        <view class="num_show"><text>{{stepData.ASSteps}}</text><view class='n_font'>步</view></view>
+
+                        <view class='total_s'>
+                            <view> {{stepData.ASMileage}}公里</view><view class='line_bg'></view><view class=''>{{stepData.ASCAL}}千卡</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+    <!--首页推荐  -->
+    <view hidden='{{isConnect ? false : true}}'>
+        <view class='sync_bg' hidden='{{!isSyncSuccess ? false : true}}'>
+            <text>正在向系统同步数据，请不要关闭小程序，耐心等待数据同步完成...</text>
+        </view>
+    </view>
+
+    <view class='re_tit' id="1" bindtap='jumpRemd'>
+        <view class='re_l'>
+            <view></view>会员精选
+        </view>
+        <view class='re_r'>越运动越健康</view>
+    </view>
+
+     <view class='re_bg'>
+        <view class='re_01' id="1" bindtap='jumpRemd'>
+            <image src='../image/index/hot_i.png'></image>
+            <view>如E全家福计划</view>
+            <text>一人投保 全家有福</text>
+            <view class='ac_1'></view>
+        </view>
+
+        <view class='re_02'>
+            <view class='re_item01'>
+                <view class='items' id="2" bindtap='jumpRemd'>
+                    <view>女性关爱宝</view>
+                    <text>一次7重保护</text>
+                </view>
+                <view class='items' id="3" bindtap='jumpRemd'>
+                    <view>体脂称</view>
+                    <text>轻便家庭装</text>
+                </view>
+            </view>
+            <view class='re_item02' id="4" bindtap='jumpRemd'>
+                <view>
+                    <view>盛世悠然 御享金生</view>
+                    <text>国寿盛世御享产品</text>
+                </view>
+                <view class='ac_2'></view>
+            </view>
+        </view>
+        
+    </view> 
+
+    <!-- <view class='cshi'>测试数据: <text wx:for="{{testList}}">{{item}}</text> </view> -->
+    <!--首页推荐  -->
+    <!-- <web-view src="https://m.ly.com/healthy/home/index"></web-view> -->
+</scroll-view>
+</view>

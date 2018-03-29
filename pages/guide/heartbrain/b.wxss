@@ -1,0 +1,145 @@
+
+.end_check{
+    border-radius: 10rpx;
+    background: #fff;
+    margin: 20rpx 30rpx;
+}
+.end_tit{
+    display: flex;
+    position: relative;
+    padding: 20rpx 30rpx ;
+    justify-content: space-between;
+    font-size: 32rpx;
+}
+.end_tit view{
+    font-size: 24rpx;
+    color: #999;
+}
+.end_res{
+    position: relative;
+}
+
+.rem_res{
+     position: relative;
+     padding-bottom: 15rpx;
+}
+.rem_res .res_item{
+    position: relative;
+    padding: 20rpx 30rpx 0;
+}
+.res_tit{
+    position: relative;
+    padding: 20rpx 30rpx 20rpx;
+}
+.res_tit view{
+    display: inline-block;
+    width: 6rpx;
+    background: #f65e51;
+    height: 30rpx;
+    line-height: 30rpx;
+    vertical-align: middle;
+    margin: -4rpx 16rpx 0 0;
+}
+
+
+.no_check,.e_check{
+    padding-bottom: 60rpx;
+}
+.item_c{
+    padding-top: 80rpx;
+    margin: 0 40rpx 0;
+    font-size: 36rpx;
+    display: flex;
+    position: relative;
+}
+.item_c:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #f66d61;
+    color: #f66d61;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.item_c text{
+    margin-right: 30rpx;
+}
+.item_c input{
+    font-size: 28rpx;
+    color: #999;
+}
+.tip_text{
+    margin: 80rpx 0 0;
+    text-align: center;
+    font-size: 28rpx;
+    color: #f65e51;
+}
+.t_t01{
+    text-decoration: underline;
+}
+.tip_text2 .t_t01{
+    font-size: 36rpx;
+}
+.res_bg{
+    padding: 46rpx 40rpx;
+    
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.res_li{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.res_li text,.res_li view{
+    text-align: center;
+    display: block;
+    flex: 0 0 50%;
+}
+.res_li view text{
+    background: #5bcaff;
+    display: inline-block;
+    width: 6rpx;
+    height: 28rpx;
+    vertical-align: middle;
+    margin: -4rpx 14rpx 0 0;
+}
+.res_li .icon_x text{
+    background: #fa5340;
+}
+.res_bg:first-child{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e5e5e5;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+.btn_bg{
+    position: fixed;
+    bottom: 28%;
+    width: 320rpx;
+    left: 50%;
+    display: block;
+    margin-left: -160rpx;
+    font-size: 28rpx;
+}
+.btn_bg text{
+    text-align: center;
+    display: block;
+    width: 320rpx;
+    height: 74rpx;
+    line-height: 74rpx;
+    background: #f65e51;
+    color: #fff;
+    border-radius: 10rpx;
+    
+}

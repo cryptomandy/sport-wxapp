@@ -1,0 +1,77 @@
+<view class="index_box">
+    <!--未开启蓝牙  -->
+    <view class='wrap_bg noget_bg' hidden="{{blueStatus==1 ? false : true}}">
+        <view class='top_t'>
+            <text>{{tips.title}}</text>
+            <view>{{tips.sub}}</view>
+        </view>
+        <view class='blue_bg01'></view>
+
+        <view class='bottom_btn'>
+            <view class='bo_btn'>
+                <view bindtap='cancelStart' hidden="{{blueStatus==1 ? false : true}}">取消</view>
+                <view class='launch_b'  hidden='{{tips.type==1? false : true}}'  bindtap='refreshBlueState'>刷新状态</view>  
+                <view bindtap='cancelSearch' hidden='!isFound && tips.type!=1? false : true'>重新搜索</view>
+            </view>
+        </view>
+    </view>
+
+    <!--搜寻蓝牙  -->
+    <view class='wrap_bg search_bg' hidden="{{blueStatus==2 ? false : true}}">
+        <view class='top_t'>
+            <text>正在搜索蓝牙...</text>
+            <view  hidden="{{isFirSuccess ? false : true}}">您已经连接过蓝牙，本次为自动连接 </view>
+            <view>请将手环贴近手机</view>
+        </view>
+        <view class='blue_bg02'></view>
+
+        <view class='bottom_btn'>
+            <view class='bo_btn'>
+                <view bindtap='stopSearch' id='2'>停止</view>
+            </view>
+        </view>
+    </view>
+    
+    <!--获取蓝牙显示  -->
+    <view class='wrap_bg show_bg' hidden="{{blueStatus==3 ? false : true}}">
+         <view class='an_titBg'>
+            <view class='an_tit'>
+                <view></view><text>请选择设备</text>                         
+            </view>
+        </view>
+        <scroll-view class='s_device'>
+            <view class='add_li' wx:for="{{blueList}}" wx:key="deviceId" bindtap='selectBlue' id="{{item.deviceId}}">
+            <view class='add_item'>
+                <view class='add_l'>
+                    <view class='add_icon'></view>
+                    <view class='add_infro'>
+                        <view>{{item.name}}</view>
+                        <text>{{item.deviceId}}</text>
+                    </view>
+                </view>
+                <view class='add_r {{item.checked ? "active" :""}}'></view>
+            </view>
+        </view>
+        </scroll-view>
+        
+        <view class='show_msg'>
+            <view class='s_msg' wx:for="{{getList}}" wx:key = "Id">
+                {{item}}
+            </view>
+        </view>
+
+
+        
+        <view class='hand_bg'>
+            <view class='hand_box'>
+
+                <view class='re_btn' bindtap='refreshStatus'>刷新</view>
+                <view class='bind_btn'bindtap='confirmBind'>确定绑定</view>
+            </view>
+
+            <!-- <view class='hand_box'>
+                <view class='re_btn' bindtap='closeConnection'>断开连接</view>
+            </view> -->
+        </view>
+    </view>
+</view>

@@ -1,0 +1,183 @@
+
+
+.container canvas{
+  width: 96%;
+  margin: 0 auto;
+  height: 300px;
+}
+.cancas_bg{
+  padding: 10rpx 0 20rpx 0 ;
+  background: #1bb1fe;
+  
+}
+.has_list,.no_list{
+    min-height: 460rpx;
+}
+.has_list{
+    display: flex;
+}
+/*中间显示的部分*/
+.cur_time{
+    border-bottom: solid 1px #f2f2f2;
+    padding: 20rpx 30rpx;
+    font-size: 24rpx;
+    background: #fff;
+    color: #999;
+    text-align: center;
+    position: relative;
+}
+.cur_time text{
+    display: inline-block;
+    margin-right: 20rpx;
+    font-size: 32rpx;
+    color: #333;
+}
+.middle_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: center;
+    background: #fff;
+}
+.mi_list{
+  padding: 30rpx 0;
+  flex: 0 0 50%;
+   box-sizing: border-box;
+   display: block;
+   color: #999;
+   font-size: 24rpx;
+   position: relative;
+}
+.mi_list:nth-child(2n+1){
+  border-bottom: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+}
+.mi_list:nth-child(2n){
+  
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.num_1 text{
+  font-size: 40rpx;
+  color: #333;
+}
+
+.mi_list .num_2 > view{
+    display: inline-block;
+    height: 44rpx;
+    width: 42rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+    background: url(https://m.ly.com/healthy/health/assets/images/app/small1/stat_i.png) no-repeat;
+    background-size: 196rpx 206rpx;
+}
+.mi_list1 .num_2 > view{
+    background-position: -50rpx -2rpx;
+}
+.mi_list2 .num_2 > view{
+    background-position: 0 -90rpx;
+}
+.mi_list3 .num_2 > view{
+    background-position: 0 -2rpx;
+}
+.mi_list4 .num_2 > view{
+    background-position: 0 -44rpx;
+    
+}
+.no_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: #fff;
+    width: 100%;
+}
+/*中间显示的部分*/
+
+.bottom_box{
+   padding: 30rpx  30rpx;
+    display: flex;
+}
+.list_b{
+  flex: 3;
+  
+}
+.bo_item{
+  margin: 0 auto;
+  background: #fff;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius:  50%;
+  border: solid 2px #f0f0f0;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-flow: column wrap;
+  color: #1cb1ff;
+}
+.bo_item.active{
+  color: #fff;
+  background: #1cb1ff;
+  border: solid 2px #fff;
+}
+.bo_item view{
+  display: block;
+}
+.bo_item view:last-child{
+  font-size: 28rpx;
+}
+
+/*横向view显示柱形图样式  */
+.x_list_bg{
+    min-height: 460rpx;
+    color: #fff;
+    font-size: 20rpx;
+    padding: 0 14rpx;
+    display: flex;
+    position: relative;
+}
+
+.x_bg{
+    position: relative;
+    margin: 0 20rpx;
+    align-self: flex-end;
+}
+.x_item{
+    text-align: center;
+    align-self: flex-end;
+    display: flex;
+    
+    position: relative;
+    flex-flow: column wrap;
+}
+
+.column{
+    display: block;
+    width: 66rpx;
+    height: 100rpx;
+    background: #80d4ff;
+}
+.item_text{
+    height: 80rpx;
+}
+.c_tip,.c_time{
+    padding-top: 10rpx;
+}
+
+.line_w{
+    bottom: 80rpx;
+    position: absolute;
+    height: 1px;
+    background: #e4f6ff;
+    width: 100%;
+}
+.aim_line{
+    bottom: 80rpx;
+    position: absolute;
+    height: 1px;
+    background: #e4f6ff;
+    width: 100%;
+}

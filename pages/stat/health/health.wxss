@@ -1,0 +1,92 @@
+
+
+
+/*top顶部*/
+.top_bg{
+    padding: 20rpx 0 90rpx 0;
+    background: #08b9c1;
+}
+.top_s{
+    margin: 0 auto; 
+    height: 350rpx;
+    width: 350rpx;
+    border: solid 10rpx #139da3;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.top_s1 .top_s text{
+    font-size: 60rpx;
+}
+
+.btn_bg{
+    position: fixed;
+    bottom: 28%;
+    width: 320rpx;
+    left: 50%;
+    display: block;
+    margin-left: -160rpx;
+    font-size: 28rpx;
+}
+.btn_bg text{
+    text-align: center;
+    display: block;
+    width: 320rpx;
+    height: 74rpx;
+    line-height: 74rpx;
+    background: #08b9c1;
+    color: #fff;
+    border-radius: 10rpx;
+    
+}
+/*输入体重身高*/
+.top_s2{
+    margin-top: 20%;
+    padding : 0 60rpx;
+}
+.input_item{
+    position: relative;
+    border-bottom: solid 1px #08b9c1;
+    line-height: 70rpx;
+    margin-bottom: 70rpx;
+    font-size: 28rpx;
+    color: #08b9c1;
+}
+.input_item input{
+    display: inline-block;
+    overflow: inherit;
+    font-size: 28rpx;
+    width: 60%;
+    color: #333;
+}
+
+.input_item text{
+    color: #333;
+    font-size: 36rpx;
+    margin-right: 14%;
+}
+
+/*结果*/
+.top_s3 .top_text{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    font-size: 24rpx;
+}
+
+.top_s3 .top_text text:first-child{
+    font-size: 44rpx;
+}
+.top_s3 .top_text .tip_num{
+    font-size: 80rpx;
+}
+.top_s3 .top_text .tip_res{
+    padding: 0 50rpx;
+    text-align: center;
+}

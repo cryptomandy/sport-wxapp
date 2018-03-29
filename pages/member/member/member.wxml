@@ -1,0 +1,65 @@
+
+<view class="index_box editinfro">
+    <navigator url="../person/person">
+        <view class='top_bg'>
+            <view class="userinfo">
+                <view class='img_box'>
+                    <image class="userinfo-avatar" src="{{user.userInfo.avatarUrl}}" background-size="cover"></image>
+                </view>
+                <view class='name_in'>{{user.userInfo.nickName}}</view>
+            </view>
+
+            <view class='total_d'>
+                <view class='t_lists'>
+                    <text>日均步数</text>
+                    <view class='t_num'>
+                        <text>{{infro.StepsDay}}</text>步
+                    </view>
+                </view>
+
+                <view class='t_lists'>
+                    <text>总公里数</text>
+                    <view class='t_num'>
+                        <text>{{infro.TotalMileageDay}}</text>千米
+                    </view>
+                </view>
+
+                <view class='t_lists'>
+                    <text>达标天数</text>
+                    <view class='t_num'>
+                        <text>{{infro.GoodDays}}</text>天
+                    </view>
+                </view>
+            </view>
+
+        </view>
+    </navigator>
+    <view class='item_bg'>
+        
+        <view class="his_list s_nolink">
+            <view class="list_l">我的客服</view>
+            <view class="list_r">0512-88888888</view>
+        </view>
+        <view class="his_list color_b s_nolink" >
+            <view class="list_l">我的积分</view>
+            <view class="list_r">{{infro.Points}}积分</view> 
+        </view>
+        <navigator url="../goal/goal">
+            <view class="his_list line_di">
+                <view class="list_l">目标设置</view>
+                <view class="list_r">{{infro.AimSteps}}步 {{infro.showSleep}}睡眠</view>
+            </view>
+        </navigator>
+        <view class="his_list" bindtap='deviceJump'>
+            <view class="list_l">我的设备</view>
+            <view  class="list_r">{{isBindDevive ? "已连接" :"未连接"}}</view>  
+        </view>
+        <navigator url="../bind/bind">
+            <view class="his_list">
+                <view class="list_l">手机绑定</view>
+                <view class="list_r" >{{infro.PhoneNumber=="" ? "去绑定" : infro.PhoneNumber}}</view> 
+            </view>
+        </navigator>
+    </view>
+    
+</view>

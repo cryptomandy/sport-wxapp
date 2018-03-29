@@ -1,0 +1,19 @@
+<!--管理员入口-->
+<view class="index_box">
+    <view class="con_box" >
+        <view class='input_bg'>
+            <view class='input_item'>
+                <text>手机号</text>
+                <input  value="{{PhoneNumber}}" bindinput="bindsendPhone" placeholder="请输入手机号码" maxlength="11"/>
+            </view>
+        </view>
+        <view class='input_bg'>
+            <view class='input_item code_item'>
+                <text>验证码</text>
+                <input  value="{{AuthCode}}" bindinput="bindCodeInput" placeholder="请输入验证码" maxlength="10"/>
+            </view>
+            <text class="code_btu" bindtap="getCodeInfro">获取验证码</text>
+        </view>
+        <view class="login_btu" bindtap='loginInfro'>完成</view>
+    </view>
+</view>
